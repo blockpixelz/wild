@@ -25,9 +25,9 @@ class Main extends PluginBase {
     if(strtolower($cmd->getName() == "wild")){
         if($s->hasPermission("wild.command")){
         if($s instanceof Player){
-            $x = rand(1,999);
-            $y = 128;
-            $z = rand(1,999);
+            $x = rand(1,9999);
+            $y = 150;
+            $z = rand(1,9999);
             
             $s->teleport(new Position($x,$y,$z));
             $s->sendMessage(C::RED."Teleporting......");
